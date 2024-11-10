@@ -96,9 +96,9 @@ data = {tracking_system: motion_data}
 channels_info = pd.DataFrame({
     "name": [f"{tracked_point}_ACCEL_x", f"{tracked_point}_ACCEL_y", 
              f"{tracked_point}_ACCEL_z", f"{tracked_point}_GYRO_x", 
-             f"{tracked_point}_GYRO_y", f"{tracked_point}_GYRO_z"],
-    "type": ["ACCEL", "ACCEL", "ACCEL", "GYRO", "GYRO", "GYRO"],
+             f"{tracked_point}_GYRO_y", f"{tracked_point}_GYRO_z"],    
     "component": ["x", "y", "z", "x", "y", "z"],
+    "type": ["ACCEL", "ACCEL", "ACCEL", "GYRO", "GYRO", "GYRO"],
     "tracked_point": [tracked_point] * 6,
     "units": ["g", "g", "g", "deg/s", "deg/s", "deg/s"],
     "sampling_frequency": [sampling_frequency] * 6
